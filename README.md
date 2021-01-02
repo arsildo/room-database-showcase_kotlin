@@ -8,7 +8,7 @@ Save notes to a local app database using android room database.
  \
  Screenshots \
  \
-![Screenshot_1605540624](https://user-images.githubusercontent.com/51417052/99273286-1a99f680-2829-11eb-85a1-553501a445e9.png)
-![Screenshot_1605538589](https://user-images.githubusercontent.com/51417052/99269331-8890ee80-2826-11eb-93f9-340aa23f78e1.png)
-![Screenshot_1605538601](https://user-images.githubusercontent.com/51417052/99269335-89c21b80-2826-11eb-8f03-5323406c4ea5.png)
-![Screenshot_1605539817](https://user-images.githubusercontent.com/51417052/99271498-32707b00-2827-11eb-8a24-ef59c7a28aeb.png)
+![Screenshot_1609616795](https://user-images.githubusercontent.com/51417052/103465472-0f008180-4d3c-11eb-95af-aa20a471a88b.png)
+![Screenshot_1609616800](https://user-images.githubusercontent.com/51417052/103465475-1031ae80-4d3c-11eb-9e20-928e21935121.png)
+![Screenshot_1609616803](https://user-images.githubusercontent.com/51417052/103465476-1031ae80-4d3c-11eb-9c93-43caa3131a9c.png)
+![Screenshot_1609616813](https://user-images.githubusercontent.com/51417052/103465477-1031ae80-4d3c-11eb-9b4f-97e5fa630ed2.png)
