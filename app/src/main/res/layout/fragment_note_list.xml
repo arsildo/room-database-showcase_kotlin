@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".fragments.NoteListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="4dp"
+        tools:listitem="@layout/item_note" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/addNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@color/green"
+            android:text="add new note"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_add"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"/>
+
+        <Button
+            android:id="@+id/deleteAllNotes"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="delete all notes"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:drawableStart="@drawable/ic_delete_sweep"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
