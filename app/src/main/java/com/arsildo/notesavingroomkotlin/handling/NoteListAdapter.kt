@@ -3,7 +3,6 @@ package com.arsildo.notesavingroomkotlin.handling
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.arsildo.notesavingroomkotlin.R
@@ -24,20 +23,25 @@ class NoteListAdapter : RecyclerView.Adapter<NoteListAdapter.NoteViewHolder>() {
                 itemView.findNavController().navigate(action)
             }
 
-
+            itemView.hideNote.setOnClickListener {
+                notifyItemRemoved(adapterPosition)
+            }
 
         }
     }
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         return NoteViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_note,parent,false))
     }
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
+
         val currentNote = noteList[position]
         holder.itemView.noteTitle.text = currentNote.noteTitle
         holder.itemView.noteDescription.text = currentNote.noteDescription
-        
+
     }
 
     override fun getItemCount(): Int {

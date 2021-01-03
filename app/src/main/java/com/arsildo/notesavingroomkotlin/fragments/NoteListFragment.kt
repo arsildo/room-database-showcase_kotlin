@@ -13,7 +13,6 @@ import com.arsildo.notesavingroomkotlin.handling.NoteViewModel
 import com.arsildo.notesavingroomkotlin.R
 import com.arsildo.notesavingroomkotlin.database.Note
 import kotlinx.android.synthetic.main.fragment_note_list.*
-import kotlinx.android.synthetic.main.item_note.*
 
 class NoteListFragment : Fragment(R.layout.fragment_note_list) {
 
@@ -23,14 +22,15 @@ class NoteListFragment : Fragment(R.layout.fragment_note_list) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         adapter = NoteListAdapter()
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(context)
+
         viewModels()
         addNote.setOnClickListener{
             findNavController().navigate(R.id.action_noteListFragment_to_addNoteFragment)
         }
-
 
         deleteAllNotes.setOnClickListener {
             noteViewModel.deleteAllNotes()
@@ -41,13 +41,10 @@ class NoteListFragment : Fragment(R.layout.fragment_note_list) {
 
     private fun viewModels(){
         noteViewModel = ViewModelProvider(this).get(NoteViewModel::class.java)
-
         noteViewModel.getNotes.observe(viewLifecycleOwner, Observer {
             adapter.setData(it)
             noteList = it
-
         })
-
     }
 
 
