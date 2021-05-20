@@ -1,6 +1,5 @@
-Save notes to a local app database using android room database.
-\
-![projectvisual](https://user-images.githubusercontent.com/51417052/99271947-824f4200-2827-11eb-9cb9-c0b58e28467d.png)
+<h1>Save notes to a local app database using android room database.</h1><br>
+<img src="https://user-images.githubusercontent.com/51417052/99271947-824f4200-2827-11eb-9cb9-c0b58e28467d.png">
 
 **Check out [the gradle file](https://github.com/arsildo/room-database-tutorial-kotlin/blob/master/build.gradle) to see what was used to create this app**
 
